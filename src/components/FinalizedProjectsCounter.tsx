@@ -6,7 +6,7 @@ export default function FinalizedProjectsCounter({ num }: { num: number }) {
             <AnimatedNumbers
                 includeComma
                 className=" font-[500] satoshi select-none text-gray-900"
-                transitions={(index) => ({
+                transitions={(index : number) => ({
                     type: "spring",
                     duration: (index + 1) * 1.5,
                 })}
