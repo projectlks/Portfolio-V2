@@ -1,10 +1,13 @@
 
 
+import Approach from "./components/Approah";
 import Benefits from "./components/Benefits";
 import CarouselPlugin from "./components/CarouselPlugin";
 import Cursor from "./components/Cursor";
 import Experience from "./components/Experience";
 import Header from "./components/Header";
+import Pricing from "./components/Pricing";
+import Skills from "./components/Skills";
 
 
 export default function App() {
@@ -17,10 +20,10 @@ export default function App() {
       <CarouselPlugin />
       <Benefits />
       <Experience />
-      {/* 
+
       <Skills />
       <Approach />
-      <Pricing /> */}
+      <Pricing />
     </section>
   );
 }
