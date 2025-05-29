@@ -4,7 +4,6 @@ import Benefits from "./components/Benefits";
 import CarouselPlugin from "./components/CarouselPlugin";
 import Cursor from "./components/Cursor";
 import Experience from "./components/Experience";
-// import Experience from "./components/Experience";
 import Header from "./components/Header";
 
 

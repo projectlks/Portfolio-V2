@@ -1,12 +1,18 @@
 import AnimatedNumbers from "react-animated-numbers";
 
-export default function FinalizedProjectsCounter({ num }: { num: number }) {
+interface FinalizedProjectsCounterProps {
+    num: number;
+}
+
+export default function FinalizedProjectsCounter({ num }: FinalizedProjectsCounterProps) {
     return (
-        <div className="container flex flex-col items-center gap-4">
+        <div className="flex flex-col items-center gap-4">
             <AnimatedNumbers
                 includeComma
-                className=" font-[500] satoshi select-none text-gray-900"
-                transitions={(index : number) => ({
+                className="font-[500] satoshi select-none text-gray-900"
+
+
+                transitions={(index: number) => ({
                     type: "spring",
                     duration: (index + 1) * 1.5,
                 })}
