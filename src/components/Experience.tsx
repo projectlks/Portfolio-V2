@@ -1,4 +1,3 @@
-// import FinalizedProjectsCounter from './FinalizedProjectsCounter'
 
 export default function Experience() {
     return (
@@ -37,7 +36,7 @@ export default function Experience() {
 
                     <div className='flex items-center '>
                         <div className=" xl:text-[137px] md:text-[85px] text-[95px] leading-none font-[500] text-gray-900">
-                            {/* <FinalizedProjectsCounter num={10} /> */}
+                            {/* <FinalizedProjectsCounter num={'10'} /> */}
                             10
                         </div>
                         <h1 className="xl:text-[137px] md:text-[85px] text-[95px] font-[500] select-none leading-none text-gray-900">+</h1>

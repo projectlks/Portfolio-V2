@@ -17,6 +17,7 @@
     "react": "^19.1.0",
     "react-animated-numbers": "^1.0.1",
     "react-dom": "^19.1.0",
+  
     "tailwindcss": "^4.1.8"
   },
   "devDependencies": {

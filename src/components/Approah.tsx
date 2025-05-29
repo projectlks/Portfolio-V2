@@ -1,18 +1,20 @@
+import type { ReactNode } from "react"
 
 
 interface Props {
     title: string
     text: string
+    logo: ReactNode
 
 }
 
-function Card({ title, text, }: Props) {
+function Card({ title, text, logo }: Props) {
     return (
         <div className={`rounded-[17px] col-span-1 flex flex-col space-y-4 hover:bg-gray-200 transition-all bg-[#dedede] p-6 `}>
 
             <div className="flex flex-col space-y-[17px] ">
-                {/* logo */}
-                <div className="bg-gray-950 w-[26px] h-[26px] "></div>
+                {logo}
+
                 <p className="xl:text-[18px] md:text-[16px] text-[18px] satoshi  font-bold">
                     {title}
                 </p>
@@ -47,17 +49,58 @@ export default function Approach() {
                 {/* first */}
 
 
-                <Card title="Consulting" text="We're asking some questions to understand your goals, design preferences and target audience. This is the foundation settlement." />
-                <Card title="Collaborative review" text="During the design phase we invite the client to review and provide feedback. This allows a better structure and functionality early on. " />
-                <Card title="Make it pop" text="Establishing a structure focused on functionality and accessibility, including interactions that ensure total immersion." />
-                <Card title="Iterate" text="Polishing the details is important when it comes to the final product. We're iterating until you're happy with the results." />
+                <Card title="Consulting" text="We're asking some questions to understand your goals, design preferences and target audience. This is the foundation settlement." logo={<div className="w-[26px] h-[26px] relative ">
 
-                {/* <Card title="Iterate" text="Polishing the details is important when it comes to the final product. We're iterating until you're happy with the results." colspan="2" bg="# 474747" /> */}
+
+                    <span className="inline-block w-3 h-3 rounded-full bg-[#303030] absolute top-0 left-0  "></span>
+                    <span className="inline-block w-3 h-3 rounded-full bg-[#303030] absolute bottom-0 right-0  "></span>
+
+
+                </div>} />
+
+                {/* second */}
+                <Card title="Collaborative review" text="During the design phase we invite the client to review and provide feedback. This allows a better structure and functionality early on. " logo={<div className="w-[26px] bg-[#303030] rounded-xs h-[26px] relative ">
+
+
+                    <span className="inline-block w-full h-1  bg-[#dedede] absolute top-1/2 transform -translate-y-1/2   "></span>
+                    <span className="inline-block w-2.5 h-2.5 rotate-45 bg-[#dedede] absolute top-1/2 left-1/2 transform -translate-1/2  "></span>
+
+
+                </div>} />
+
+                {/* third */}
+                <Card title="Make it pop" text="Establishing a structure focused on functionality and accessibility, including interactions that ensure total immersion." logo={<div className="w-[26px] h-[26px] relative ">
+
+
+                    <span className="inline-block w-2 h-2  bg-[#303030] absolute top-0 right-0  "></span>
+                    <span className="inline-block w-3 h-3 -rotate-12 bg-[#303030] absolute bottom-0 left-0  "></span>
+
+
+                </div>} />
+                {/* fourth */}
+                <Card title="Iterate" text="Polishing the details is important when it comes to the final product. We're iterating until you're happy with the results." logo={<div className="w-[26px] h-[26px] relative ">
+
+
+                    <span className="inline-block w-3 h-full rounded-tr-full bg-[#303030] absolute top-0 left-0  "></span>
+                    <span className="inline-block w-3 h-full rounded-bl-full  bg-[#dedede] border-[#303030] border-2 absolute bottom-0 right-0  "></span>
+
+
+                </div>} />
+
+                {/* sixth */}
                 <div className={`rounded-[17px]  flex flex-col justify-between hover:bg-gray-600 transition-all bg-[#474747] md:col-span-2 p-6 `}>
 
                     <div className="flex flex-col space-y-[17px] ">
                         {/* logo */}
-                        <div className="bg-[#fff] w-[26px] h-[26px] "></div>
+                        <div className="w-[26px] h-[26px] relative ">
+
+
+                           <span className="absolute top-0 right-0 w-0 h-0 border-t-20 border-l-20 border-t-[#dedede] border-l-transparent"></span>
+
+                            <span className="inline-block w-4 h-4 rounded-full  bg-[#dedede]   absolute bottom-0 left-0  "></span>
+
+
+                        </div>
                         <p className="xl:text-[18px] md:text-[16px] text-[18px] satoshi text-white font-bold">
                             Ready to take off
                         </p>
