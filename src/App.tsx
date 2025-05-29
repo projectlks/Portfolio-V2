@@ -3,6 +3,7 @@
 import Benefits from "./components/Benefits";
 import CarouselPlugin from "./components/CarouselPlugin";
 import Cursor from "./components/Cursor";
+import Experience from "./components/Experience";
 import Header from "./components/Header";
 
 
@@ -15,7 +16,8 @@ export default function App() {
       <Header />
       <CarouselPlugin />
       <Benefits />
-      {/* <Experience />
+      <Experience />
+      {/* 
       <Skills />
       <Approach />
       <Pricing /> */}
