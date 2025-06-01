@@ -1,4 +1,5 @@
 import type { ReactNode } from "react"
+import gsap from "gsap"
 
 
 interface Props {
@@ -15,13 +16,13 @@ function Card({ title, text, logo }: Props) {
             <div className="flex flex-col space-y-[17px] ">
                 {logo}
 
-                <p className="xl:text-[18px] md:text-[16px] text-[18px] satoshi  font-bold">
+                <p className="xl:text-[18px] md:text-[16px] text-[18px] satoshi cursor-default font-bold">
                     {title}
                 </p>
             </div>
 
             <p
-                className="text-[#292929] satoshi xl:text-[16px] text-[15px] text-[] leading-[1.4em] tracking-[-0.01em]"
+                className="text-[#292929] satoshi xl:text-[16px] text-[15px] text-[] leading-[1.4em] cursor-default tracking-[-0.01em]"
 
             >
                 {text}
@@ -88,26 +89,39 @@ export default function Approach() {
                 </div>} />
 
                 {/* sixth */}
-                <div className={`rounded-[17px]  flex flex-col justify-between hover:bg-gray-600 transition-all bg-[#474747] md:col-span-2 p-6 `}>
+                <div
+
+                    onMouseEnter={() => {
+                        gsap.to("#cursor", { backgroundColor: "#baff00", duration: 0.3 });
+                    }}
+
+                    onMouseLeave={() => {
+                        gsap.to("#cursor", { backgroundColor: "#030712", duration: 0.3 });
+                    }}
+
+
+
+
+                    className={`rounded-[17px]  flex flex-col justify-between hover:bg-gray-600 transition-all bg-[#474747] md:col-span-2 p-6 `}>
 
                     <div className="flex flex-col space-y-[17px] ">
                         {/* logo */}
                         <div className="w-[26px] h-[26px] relative ">
 
 
-                           <span className="absolute top-0 right-0 w-0 h-0 border-t-20 border-l-20 border-t-[#dedede] border-l-transparent"></span>
+                            <span className="absolute top-0 right-0 w-0 h-0 border-t-20 border-l-20 border-t-[#dedede] border-l-transparent"></span>
 
                             <span className="inline-block w-4 h-4 rounded-full  bg-[#dedede]   absolute bottom-0 left-0  "></span>
 
 
                         </div>
-                        <p className="xl:text-[18px] md:text-[16px] text-[18px] satoshi text-white font-bold">
+                        <p className="xl:text-[18px] md:text-[16px] text-[18px] cursor-default satoshi text-white font-bold">
                             Ready to take off
                         </p>
                     </div>
 
                     <p
-                        className="text-[#fff] satoshi xl:text-[16px] text-[15px] leading-[1.4em] tracking-[-0.01em]"
+                        className="text-[#fff] satoshi xl:text-[16px] text-[15px] cursor-default leading-[1.4em] tracking-[-0.01em]"
 
                     >
                         Handing off the fully working website or landing page which is ready to launch right away, empowering you with a seamless transition from concept to final product.

@@ -31,7 +31,7 @@ export default function CarouselPlugin() {
 
     return (
         <div
-            className="border-y border-gray-300 md:px-5  py-10"
+            className="border-y border-gray-300 md:px-5 overflow-x-scroll  py-10"
 
         >
             <Carousel

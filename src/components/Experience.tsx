@@ -1,24 +1,42 @@
 
 export default function Experience() {
+
+
+    const words = [
+        "BUILDING",
+        "WEBSITES",
+        "THAT",
+        "NOT",
+        "ONLY",
+        "LOOK",
+        "GREAT",
+        "BUT",
+        "ALSO",
+        "DELIVER",
+        "MEASURABLE",
+        "RESULTS."
+    ];
+
     return (
         <>
 
             <div className='w-[90%]  mx-auto  sm:max-w-[600px] md:max-w-[740px] xl:max-w-[1100px]'>
 
 
-                <div className="xl:text-[43px] md:text-[35px] text-[36px] font-[500] flex flex-wrap flex-row  tracking-[-0.03em] leading-[0.7em] w-[90%] max-w-[830px] gap-[0.25em] selection:bg-[#baff00] selection:text-gray-950   text-neutral-700">
-                    <span className=''>BUILDING </span>
-                    <span className=''>WEBSITES </span>
-                    <span className=''>THAT </span>
-                    <span className=''>NOT </span>
-                    <span className=''>ONLY </span>
-                    <span className=''>LOOK </span>
-                    <span className=''>GREAT </span>
-                    <span className=''>BUT </span>
-                    <span className=''>ALSO </span>
-                    <span className=''>DELIVER </span>
-                    <span className=''>MEASURABLE </span>
-                    <span className=''>RESULTS.</span>
+                <div className="xl:text-[43px] cursor-default md:text-[35px] text-[36px] font-[500] flex flex-wrap flex-row  tracking-[-0.03em] leading-[0.7em] w-[90%] max-w-[830px] gap-[0.25em] selection:bg-[#baff00] selection:text-gray-950   text-neutral-700">
+                    {words.map((word, index) => (
+                        <span
+                            key={index}
+                            data-aos="new-animation"
+                            data-aos-delay={index * 100}
+
+                            data-aos-duration="800"
+                            data-aos-easing="ease-in-out"
+
+                        >
+                            {word}
+                        </span>
+                    ))}
                 </div>
 
             </div>
@@ -28,7 +46,7 @@ export default function Experience() {
 
 
 
-            <div className='flex justify-between items-baseline md:flex-row flex-col space-y-[35px] w-[90%]   mx-auto  sm:max-w-[600px] md:max-w-[740px] xl:max-w-[1100px]  '>
+            <div className='flex select-none  justify-between items-baseline md:flex-row flex-col space-y-[35px] w-[90%]   mx-auto  sm:max-w-[600px] md:max-w-[740px] xl:max-w-[1100px]  '>
 
 
                 {/* first */}

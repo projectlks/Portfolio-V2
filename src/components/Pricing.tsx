@@ -23,7 +23,7 @@ type FeatureListItemProps = {
 export const FeatureListItem = ({ icon, text }: FeatureListItemProps) => (
     <li className="flex items-center space-x-[6px] text-[16px] font-medium satoshi text-[#3d3d3d]">
         <span className="inline-block w-[16px] text-sm">{icon}</span>
-        <p className="satoshi leading-[1.2em] ">{text}</p>
+        <p className="satoshi leading-[1.2em] cursor-default ">{text}</p>
     </li>
 )
 
@@ -32,11 +32,11 @@ export default function Pricing() {
     return (
         <div id='pricing' className="w-[90%]  flex flex-col space-y-[26px] md:space-y-[35px] mx-auto  sm:max-w-[600px] md:max-w-[740px] xl:max-w-[1102px]">
             <div className="flex flex-col space-y-2">
-                <p className='xl:text-[44px] text-[37px] text- select-none '>
+                <p className='xl:text-[44px] text-[37px] cursor-default text- select-none '>
                     Pricing
                 </p>
 
-                <p className="text-[18px] font-medium leading-[1.3em] text-[#6e6e6e] satoshi">
+                <p className="text-[18px] cursor-default font-medium leading-[1.3em] text-[#6e6e6e] satoshi">
                     Elevate your brand with our in-house design expert who brings over 12 years of experience to the table.
                 </p>
 
@@ -65,12 +65,12 @@ export default function Pricing() {
                         {/* title */}
 
 
-                        <div className="flex flex-row items-center justify-between  space-y-1">
+                        <div className="flex flex-row cursor-default items-center justify-between  space-y-1">
                             <p className="text-[20px] satoshi font-bold">Landing Page</p>
                             <p className="text-[18px] satoshi font-bold">1,500K</p>
                         </div>
 
-                        <p className="text-[15px] satoshi font-medium leading-[1.2em] text-[#8c8c8c] ">
+                        <p className="text-[15px] cursor-default satoshi font-medium leading-[1.2em] text-[#8c8c8c] ">
                             Capture attention and drive conversions effectively. Meticulously crafted design to impact your audience.
                         </p>
 
@@ -125,23 +125,23 @@ export default function Pricing() {
 
 
                         <div className="flex flex-row items-center justify-between  space-y-1">
-                            <p className="text-[20px] satoshi font-bold">Full Website</p>
+                            <p className="text-[20px] satoshi cursor-default font-bold">Full Website</p>
 
 
                             <div className='flex items-center space-x-2'>
 
 
                                 <div className="flex flex-col justify-center items-center border rounded border-gray-300 h-[21px] px-2 ">
-                                    <p className="text-xs font-medium text-[#949494]">Starting at</p>
+                                    <p className="text-xs font-medium cursor-default text-[#949494]">Starting at</p>
 
                                 </div>
-                                <p className="text-[18px] satoshi font-bold">3,000K +</p>
+                                <p className="text-[18px] satoshi cursor-default font-bold">3,000K +</p>
 
                             </div>
                         </div>
 
 
-                        <p className="text-[15px] satoshi font-medium leading-[1.2em] text-[#8c8c8c] ">
+                        <p className="text-[15px] satoshi font-medium leading-[1.2em] text-[#8c8c8c] cursor-default ">
                             Capture attention and drive conversions effectively. Meticulously crafted design to impact your audience.
                         </p>
 

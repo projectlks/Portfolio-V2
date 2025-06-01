@@ -65,7 +65,7 @@ const MorphingParagraph = ({ text }: Props) => {
   }, [paragraph]);
 
   return (
-    <div className="xl:text-[33px] md:text-[28px] text-[27px] font-[500] leading-[1em] tracking-[-0.03em] text-[#212121] selection:bg-[#baff00]">
+    <div className="xl:text-[33px] cursor-default md:text-[28px] text-[27px] font-[500] leading-[1em] tracking-[-0.03em] text-[#212121] selection:bg-[#baff00]">
       {displayedLetters.join("")}
     </div>
   );

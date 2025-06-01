@@ -1,26 +1,41 @@
-/* @import "tailwindcss" */
-/*  */
-
+@import "tailwindcss";
 
 * {
-    font-family: "Albert Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-    cursor: default;
+  font-family: "Albert Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+
 }
 
 *::selection {
-    background-color: #baff00;
-    color: #030712;
+  background-color: #baff00;
+  color: #030712;
 }
 
 @font-face {
-    font-family: "Satoshi";
-    src: url("./assets/Satoshi.ttf") format("truetype");
+  font-family: "Satoshi";
+  src: url("./assets/Satoshi.ttf") format("truetype");
 }
 
 .satoshi {
-    font-family: "Satoshi", sans-serif !important;
+  font-family: "Satoshi", sans-serif !important;
 }
 
-@import "tailwindcss"
+/* Custom AOS animation */
+[data-aos="new-animation"] {
+  opacity: 0.1;
+  transition-property:  opacity;
+ 
+}
+
+[data-aos="new-animation"].aos-animate {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Responsive transform only for desktop */
+@media screen and (max-width: 767px) {
+  [data-aos="new-animation"] {
+    transform: none;
+  }
+}
