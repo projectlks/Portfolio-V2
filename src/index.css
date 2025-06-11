@@ -4,12 +4,14 @@
   font-family: "Albert Sans", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
+  scroll-behavior: smooth;
 
 }
 
 *::selection {
   background-color: #baff00;
   color: #030712;
+
 }
 
 @font-face {
@@ -24,8 +26,8 @@
 /* Custom AOS animation */
 [data-aos="new-animation"] {
   opacity: 0.1;
-  transition-property:  opacity;
- 
+  transition-property: opacity;
+
 }
 
 [data-aos="new-animation"].aos-animate {
@@ -38,4 +40,25 @@
   [data-aos="new-animation"] {
     transform: none;
   }
+}
+
+body::-webkit-scrollbar {
+  width: 8px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #474747;
+  border-radius: 4px;
+  border: 1px solid transparent;
+  background-clip: padding-box;
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.1);
+}
+
+body::-webkit-scrollbar-track {
+  background-color: inherit;
+}
+
+/* styles.css */
+.custom-cursor:hover {
+  cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23baff00' id='Arrows-Horizontal--Streamline-Phosphor' height='24' width='24'%3E%3Cdesc%3EArrows Horizontal Streamline Icon: https://streamlinehq.com%3C/desc%3E%3Cpath d='m14.85375 8.35375 -2 2a0.5 0.5 0 0 1 -0.7075 -0.7075L13.293125 8.5H2.706875l1.146875 1.14625a0.5 0.5 0 0 1 -0.7075 0.7075l-2 -2a0.5 0.5 0 0 1 0 -0.7075l2 -2a0.5 0.5 0 0 1 0.7075 0.7075L2.706875 7.5h10.58625l-1.146875 -1.14625a0.5 0.5 0 0 1 0.7075 -0.7075l2 2a0.5 0.5 0 0 1 0 0.7075Z' stroke-width='0.0625'%3E%3C/path%3E%3C/svg%3E") 8 8, auto;
 }

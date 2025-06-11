@@ -13,12 +13,14 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 import { useCursor } from "./hooks/useCursor";
+import AboutMe from "./components/AboutMe";
+import Footer from "./components/Footer";
 
 export default function App() {
   useEffect(() => {
     AOS.init({
       once: false,
-      mirror: true,
+      // mirror: true,
       duration: 500,
     });
   }, []);
@@ -31,23 +33,10 @@ export default function App() {
       {/* Global cursor */}
       <div
         id="cursor"
-        className="w-2 h-2 rounded-full bg-gray-950 fixed top-0 left-0 pointer-events-none z-50 opacity-100  "
+        className="w-2 h-2  rounded-full bg-gray-950 fixed top-0 left-0 pointer-events-none z-50 opacity-100  "
       ></div>
 
-      {/* Test area for scaling */}
-      {/* <div
-        onMouseEnter={() => {
-          gsap.to("#cursor", { scale: 8, duration: 0.3 });
-          gsap.to("#cursor", { duration: 0.3 });
-        }}
-        onMouseLeave={() => {
-          gsap.to("#cursor", { scale: 1, duration: 0.3 });
-          gsap.to("#cursor", { duration: 0.3 });
-        }}
-        className="mix-blend-difference"
-      >
-        Hover me!
-      </div> */}
+
 
       {/* Your sections */}
       <Header />
@@ -57,6 +46,8 @@ export default function App() {
       <Skills />
       <Approach />
       <Pricing />
+      <AboutMe />
+      <Footer />
     </section>
   );
 }

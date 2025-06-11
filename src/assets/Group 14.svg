@@ -1,0 +1,20 @@
+<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_24_79)">
+<circle cx="24" cy="24" r="22.25" stroke="black" stroke-width="3.5"/>
+<rect x="14" y="3" width="3.5" height="34" fill="black"/>
+<rect x="10.5" y="2" width="3.5" height="8" fill="white"/>
+<rect x="14" y="34" width="16" height="3.5" fill="black"/>
+<rect x="25.9292" y="33.9263" width="3" height="6.43491" transform="rotate(-45 25.9292 33.9263)" fill="white"/>
+<rect x="21" y="10.5" width="3.5" height="20" fill="black"/>
+<rect x="21" y="23.498" width="17.6749" height="3.5" transform="rotate(-45 21 23.498)" fill="black"/>
+<rect x="33.5" y="11" width="5" height="3" fill="black"/>
+<path d="M34.8999 14.5422L38.5164 10.9258L40.2841 12.6935L36.6677 16.31L34.8999 14.5422Z" fill="white"/>
+<rect x="24" y="22" width="3.5" height="23" transform="rotate(-45 24 22)" fill="black"/>
+<rect x="40.4199" y="33.4749" width="3.5" height="6.41591" transform="rotate(-45 40.4199 33.4749)" fill="white"/>
+</g>
+<defs>
+<clipPath id="clip0_24_79">
+<path d="M0 24C0 10.7452 10.7452 0 24 0V0C37.2548 0 48 10.7452 48 24V24C48 37.2548 37.2548 48 24 48V48C10.7452 48 0 37.2548 0 24V24Z" fill="white"/>
+</clipPath>
+</defs>
+</svg>

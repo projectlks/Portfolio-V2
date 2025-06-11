@@ -7,11 +7,14 @@ interface FeatureItemProps {
 }
 
 export const FeatureItem = ({ title, description, logo }: FeatureItemProps) => {
-    // const words = description.split(" ");
+
 
     return (
-        <div data-aos="fade-up"  className="flex flex-col space-y-[17px] max-w-[312px]">
-            {logo}
+        <div data-aos="fade-up" className="flex flex-col space-y-[17px] max-w-[312px]">
+            <div>
+
+                {logo}
+            </div>
 
             <div className="flex flex-col space-y-[17px]">
                 <p className="xl:text-[20px] md:text-[18px] text-[17px] font-bold text-black flex flex-wrap gap-1 cursor-default ">

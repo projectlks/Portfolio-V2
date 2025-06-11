@@ -3,8 +3,7 @@ export default function Benefits() {
     return (
         <div className=' flex-col flex space-y-[35px] w-[90%] mx-auto sm:max-w-[600px] md:max-w-[740px] xl:max-w-[1100px] '>
 
-            <p onMouseEnter={() => gsap.to("#cursor", { scale: 4 })}
-                onMouseLeave={() => gsap.to("#cursor", { scale: 1 })} data-aos="fade-up" className='xl:text-[44px] text-[37px] text- select-none '>
+            <p  data-aos="fade-up" className='xl:text-[44px] text-[37px] text- select-none '>
                 Benefits
             </p>
 

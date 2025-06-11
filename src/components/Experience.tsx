@@ -53,7 +53,7 @@ export default function Experience() {
                 <div className='w-full  flex flex-col space-y-0  '>
 
                     <div className='flex items-center '>
-                        <div className=" xl:text-[137px] md:text-[85px] text-[95px] leading-none font-[500] text-gray-900">
+                        <div className=" xl:text-[137px] md:text-[85px] text-[95px] leading-none satoshi font-[500] text-gray-900">
                             {/* <FinalizedProjectsCounter num={'10'} /> */}
                             10
                         </div>
@@ -71,7 +71,7 @@ export default function Experience() {
                 <div className='w-full flex flex-col space-y-0'>
 
                     <div className='flex items-center '>
-                        <div className=" xl:text-[137px] md:text-[85px] text-[95px] leading-none font-[500] text-gray-900">
+                        <div className=" xl:text-[137px] md:text-[85px] text-[95px] leading-none  satoshi font-[500] text-gray-900">
                             {/* <FinalizedProjectsCounter num={97} /> */}
                             97
                         </div>
@@ -89,7 +89,7 @@ export default function Experience() {
                 <div className='w-full  flex flex-col space-y-0'>
 
                     <div className='flex items-center '>
-                        <div className="xl:text-[137px] md:text-[85px] text-[95px] leading-none font-[500] text-gray-900">
+                        <div className="xl:text-[137px] md:text-[85px] text-[95px] leading-none satoshi font-[500] text-gray-900">
                             {/* <FinalizedProjectsCounter num={2} /> */}
 
                             2
