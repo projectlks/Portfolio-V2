@@ -1,9 +1,5 @@
 import { Carousel } from '@mantine/carousel';
-import eCom from '../assets/e-com.png';
-import movieWeb from '../assets/movie-web.png';
-import ticTacToe from '../assets/tip-tac-toe.png';
-import shoe from '../assets/shoe.png';
-import eastWind from '../assets/eastwind.png';
+
 import gsap from 'gsap';
 
 interface itemType {
@@ -11,20 +7,6 @@ interface itemType {
     link: string;
 }
 
-const images: itemType[] = [
-    { img: eCom, link: 'https://ecommerce-website-taupe-psi.vercel.app/' },
-    { img: movieWeb, link: 'https://movie-web-v-2.vercel.app/' },
-    { img: shoe, link: 'https://shoes-e-commerce-master.vercel.app/' },
-    { img: eastWind, link: 'https://www.eastwindmyanmar.com.mm/' },
-    { img: ticTacToe, link: 'https://tic-tac-toe-mauve-one.vercel.app/' },
-
-    // { img: 'https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/images/bg-1.png', link: '#' },
-    // { img: 'https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/images/bg-2.png', link: '#' },
-    // { img: 'https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/images/bg-3.png', link: '#' },
-    // { img: 'https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/images/bg-4.png', link: '#' },
-    // { img: 'https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/images/bg-5.png', link: '#' },
-
-];
 
 const onMouseEnter = () => {
     const el = document.getElementById("cursor");
@@ -35,9 +17,9 @@ const onMouseEnter = () => {
           <span class="text-[10px] text-gray-100 ">Visit</span>
         </div>
       `;
-        el.style.opacity = "1";
+
     }
-    gsap.to("#cursor", { duration: 0.3, textIndent: 0, backgroundColor: "inherit" });
+    gsap.to("#cursor", { duration: 0.3, textIndent: 0, backgroundColor: "transparent", });
 }
 
 
@@ -45,35 +27,54 @@ const onMouseLeave = () => {
     const el = document.getElementById("cursor");
     if (el) {
         el.innerHTML = "";
-        el.style.opacity = "0";
+
     }
     gsap.to("#cursor", { duration: 0.3, textIndent: 0, backgroundColor: "#030712" });
 }
+
+
+const images: itemType[] = [
+    { img: '/imgs/e-com.webp', link: 'https://ecommerce-website-taupe-psi.vercel.app/' },
+    { img: '/imgs/eastwind.webp', link: 'https://www.eastwindmyanmar.com.mm/' },
+    { img: '/imgs/movie-web.webp', link: 'https://movie-web-v-2.vercel.app/' },
+    { img: '/imgs/shoe.webp', link: 'https://shoes-e-commerce-master.vercel.app/' },
+    { img: '/imgs/tip-tac-toe.webp', link: 'https://tic-tac-toe-mauve-one.vercel.app/' },
+];
+
+
+
+
+
+
 function CarouselCard({ item }: { item: itemType }) {
-
-
-
+    const isFirst = item.link === images[0].link;
 
     return (
-        // ...existing code...
         <a
             onMouseEnter={onMouseEnter}
             onMouseLeave={onMouseLeave}
             href={item.link}
             target="_blank"
             rel="noopener noreferrer"
+            aria-label={`Visit project site: ${item.link}`}
+
         >
-            <div className="p-[7px] rounded-[14px] bg-white border border-gray-300">
-                <img src={item.img} alt="images" className="rounded-[8px] object-cover w-full h-auto" />
+            <div className="p-[7px] rounded-[14px] bg-gray-100 border border-gray-300">
+                <img
+                    src={item.img}
+                    alt={`Screenshot of project at ${item.link}`}
+                    loading={isFirst ? "eager" : "lazy"}
+                    fetchPriority={isFirst ? "high" : "auto"}
+                    width={700}
+                    height={394}
+                    className="rounded-[8px] object-cover w-full h-auto"
+                />
             </div>
         </a>
-
-        // ...existing code...
     );
-
-
-
 }
+
+
 
 export default function CarouselPlugin() {
 
@@ -94,7 +95,7 @@ export default function CarouselPlugin() {
 
 
                 slideSize={{ base: '100%', sm: "75%", md: '50%', xl: '700px' }}
-                slideGap="8px"
+                slideGap="10px"
                 withControls={false}
                 withIndicators={false}
                 draggable={true} // Enable dragging

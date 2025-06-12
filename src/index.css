@@ -16,7 +16,7 @@
 
 @font-face {
   font-family: "Satoshi";
-  src: url("./assets/Satoshi.ttf") format("truetype");
+  src: url('/fonts/Satoshi.ttf') format('truetype');
 }
 
 .satoshi {

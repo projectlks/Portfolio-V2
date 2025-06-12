@@ -1,11 +1,11 @@
-import logo from "../assets/logo.svg"
+
 
 export default function Footer() {
   return (
     <div className="w-full bg-[#baff00] cursor-default  py-[54px] flex flex-col justify-between items-center h-[681px] ">
       <span className="flex items-center select-none space-x-2 ">
 
-        <img src={logo} alt="logo" className="h-10 w-10   rounded-full" />
+        <img src={'imgs/logo.svg'} alt="logo" className="h-10 w-10   rounded-full" />
 
         <p className="text-[24px] font-bold text-gray-900">
 

@@ -81,15 +81,17 @@ export default function Pricing() {
 
 
                             <FeatureListItem icon={<DocumentIcon className="w-[16px] h-[16px]" />} text="Single page" />
-                            <FeatureListItem icon={<PencilIcon className="w-[16px] h-[16px]" />} text="Design only" />
-                            <FeatureListItem icon={<RectangleStackIcon className="w-[16px] h-[16px]" />} text="Multiple iterations" />
+                            <FeatureListItem icon={<PencilIcon className="w-[16px] h-[16px]" />} text="Design and Build" />
+                            <FeatureListItem icon={<RectangleStackIcon className="w-[16px] h-[16px]" />} text="Unlimited revisions" />
+                            <FeatureListItem icon={<Squares2X2Icon className="w-[16px] h-[16px]" />} text="Responsive design" />
                             <FeatureListItem icon={<ChatBubbleOvalLeftIcon className="w-[16px] h-[16px]" />} text="Slack/Discord communication" />
+
                         </ul>
 
                         {/* button */}
                         <div className="pt-2 "><a href=""><button className="w-full cursor-pointer  rounded-full bg-gray-900 hover:bg-gray-950  h-[38px] text-gray-100 flex justify-center items-center">
                             <p className="leading-none bold">
-                                Choose Design Only
+                                Get Landing Page
                             </p>
 
                         </button></a></div>
@@ -150,23 +152,20 @@ export default function Pricing() {
                         <ul className="flex flex-col space-y-[12px] ">
 
 
-
                             <FeatureListItem icon={<DocumentDuplicateIcon className="w-[16px] h-[16px]" />} text="Multi page" />
                             <FeatureListItem icon={<PencilIcon className="w-[16px] h-[16px]" />} text="Design and Build" />
-                            <FeatureListItem icon={<RectangleStackIcon className="w-[16px] h-[16px]" />} text="Multiple iterations" />
-                            <FeatureListItem icon={<CodeBracketIcon className="w-[16px] h-[16px]" />} text="Custom Code" />
+                            <FeatureListItem icon={<RectangleStackIcon className="w-[16px] h-[16px]" />} text="Unlimited revisions" />
+                            <FeatureListItem icon={<CodeBracketIcon className="w-[16px] h-[16px]" />} text="Custom features" />
                             <FeatureListItem icon={<Squares2X2Icon className="w-[16px] h-[16px]" />} text="Components library" />
-
+                            <FeatureListItem icon={<Squares2X2Icon className="w-[16px] h-[16px]" />} text="Responsive design" />
                             <FeatureListItem icon={<ChatBubbleOvalLeftIcon className="w-[16px] h-[16px]" />} text="Slack/Discord communication" />
-
-
 
                         </ul>
 
                         {/* button */}
                         <div className="pt-2 "><a href=""><button className="w-full cursor-pointer  rounded-full bg-gray-900 hover:bg-gray-950  h-[38px] text-gray-100 flex justify-center items-center">
                             <p className="leading-none bold">
-                                Choose Design Only
+                                Get Full Website
                             </p>
 
                         </button></a></div>
@@ -176,6 +175,52 @@ export default function Pricing() {
                     </div>
 
                 </div>
+
+
+                {/* third - Custom card */}
+                <div className="rounded-[24px] p-2 bg-[#e8e8e8] h-fit">
+                    <div className="p-5 flex flex-col space-y-[16px] shadow-2xl shadow-black/5 bg-[#212121] rounded-[17px]">
+                        {/* logo */}
+                        <div className="w-[41px] h-auto aspect-square rounded bg-[#f5f5f5] flex justify-center items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-7">
+                                <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v6l4 2" />
+                                <circle cx="12" cy="12" r="9" stroke="currentColor" strokeWidth="1.5" fill="none" />
+                            </svg>
+                        </div>
+
+                        {/* title */}
+                        <div className="flex flex-row items-center justify-between space-y-1">
+                            <p className="text-[20px] satoshi cursor-default font-bold text-gray-100">Custom</p>
+                        </div>
+
+                        <p className="text-[15px] satoshi font-medium leading-[1.2em] text-gray-300 cursor-default">
+                            Seeking a different scope of work? We're offering a variety of other design services.
+                        </p>
+                        <p className="text-[14px] satoshi font-medium leading-[1.2em] text-gray-400 cursor-default">
+                            Figma workflow, no development.
+                        </p>
+
+                        <div className="h-[1px] w-full bg-[#393939]"></div>
+
+                        <ul className="flex flex-col space-y-[12px]">
+                            <FeatureListItem icon={<Squares2X2Icon className="w-[16px] h-[16px] text-gray-200" />} text="Web apps"  />
+                            <FeatureListItem icon={<Squares2X2Icon className="w-[16px] h-[16px] text-gray-200" />} text="Desktop apps"  />
+                            <FeatureListItem icon={<Squares2X2Icon className="w-[16px] h-[16px] text-gray-200" />} text="Mobile apps" />
+                        </ul>
+
+                        {/* button */}
+                        <div className="pt-2">
+                            <a href="">
+                                <button className="w-full cursor-pointer rounded-full bg-gray-100 hover:bg-gray-200 h-[38px] text-gray-900 flex justify-center items-center">
+                                    <p className="leading-none bold">
+                                        Request Custom
+                                    </p>
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
 
             </div>
 

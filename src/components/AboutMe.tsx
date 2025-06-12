@@ -1,4 +1,4 @@
-import profile from "../assets/profile.png"
+
 export default function AboutMe() {
     return (
         <div className="flex justify-between  w-[90%]  mx-auto sm:max-w-[600px] md:max-w-[740px] xl:max-w-[1100px]">
@@ -9,7 +9,7 @@ export default function AboutMe() {
                     Front-End Developer
                 </p>
 
-                <img src={profile} alt="profile" className=" h-[400px]  object-contain md:hidden w-full max-w-[300px] select-none md:rounded-none "
+                <img src={'imgs/profile.webp'} alt="profile" className=" h-[400px]  object-contain md:hidden w-full max-w-[300px] select-none md:rounded-none "
 
                 />
 
@@ -31,7 +31,7 @@ export default function AboutMe() {
 
             {/* Right Side - Image */}
             <div className="select-none hidden md:flex justify-end   items-end  ">
-                <img src={profile} alt="profile" className=" h-[400px] w-auto object-cover   "
+                <img src={'imgs/profile.webp'} alt="profile" loading="lazy" className=" h-[400px] w-auto object-cover   "
 
                 />
             </div>
