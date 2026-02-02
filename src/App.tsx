@@ -53,7 +53,6 @@ export default function App() {
 
   return (
     <>
-      <Analytics />
       <section className="flex flex-col space-y-[78px] overflow-hidden bg-[#f0f0f0]">
         {/* Global cursor */}
         <div
@@ -72,6 +71,7 @@ export default function App() {
           <AboutMe />
           <Footer />
         </Suspense>
+        <Analytics />
       </section>
     </>
   );
